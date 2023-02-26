@@ -1,2 +1,32 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.list-container {
+  padding: 60px;
+  box-shadow: 5px 5px 12px slateblue;
+}
+
+.list-big {
+  font-size: 26px;
+  color: rgb(9, 76, 63);
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(9, 76, 63);
+}
+
+a:hover {
+  color: rgb(60, 168, 146);
+}
+
+.inline-items {
+  display: inline;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  list-style: none;
+}

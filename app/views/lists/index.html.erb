@@ -1,0 +1,16 @@
+<div class='list-container'>
+  <h1>My Movie Lists</h1>
+  <hr>
+  <ul>
+    <% @lists.each do |list| %>
+      <li class='list-big'>
+        <%= link_to list.name, list_path(list) %>
+      </li>
+    <% end %>
+  </ul>
+  <ul class="inline-items">
+    <li>
+      <%= link_to "Create a New Movie List", new_list_path %>
+    </li>
+  </ul>
+</div>

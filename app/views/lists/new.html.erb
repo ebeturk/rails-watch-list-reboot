@@ -1,0 +1,6 @@
+<h1>Create a New List</h1>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.input :movie_ids, collection: @movies.map{|m| [m.title]} %>
+  <%= f.button :submit %>
+<% end %>
